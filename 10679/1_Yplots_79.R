@@ -39,7 +39,7 @@ gg.Yboth <- ggplot(data=data.frame(LOW=Y[,"LOW"], HIGH=Y[,"HIGH"], t=1:TT), mapp
   geom_line(aes(y=HIGH, color="Hard band"), linewidth=0.5)  +
   geom_line(aes(y=LOW, color="Soft band"), linewidth=0.5)  +
   ylab(bquote( bold(Y[italic(t)]))) +
-  xlab(bquote( italic(t))) +
+  xlab(expression(paste("Time bin index ", italic(t), " (", Delta, t, " = 50 s",")"))) +
   scale_color_manual(values=c(rgb(63, 141, 174, maxColorValue = 255), rgb(198, 101, 38, maxColorValue = 255))) +
   labs(color="ObsID 10679") +
   theme(legend.position = c(0.9, 0.8), legend.key = element_blank(), legend.text = element_text(size=12),

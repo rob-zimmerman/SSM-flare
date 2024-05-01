@@ -47,7 +47,7 @@ gg.2state <- ggplot(data=data.frame(LOW=Y[,"LOW"], t=1:TT), mapping=aes(x=t)) +
   geom_point(aes(y=LOW, color=Z.2state), size=0.5)  +
   scale_color_manual(values=c("blue", "red")) +
   ylab(bquote(italic(Y)[italic("t,")*plain("1")])) +
-  xlab(bquote(italic(t))) +
+  xlab(expression(paste("Time bin index ", italic(t), " (", Delta, t, " = 50 s",")"))) +
   labs(color="ObsID 01885") +
   theme(legend.position = c(0.9, 0.8), legend.key = element_blank(), legend.text = element_text(size=12),
         legend.box.background = element_rect(colour = "black"), 
@@ -68,7 +68,7 @@ gg.3state <- ggplot(data=data.frame(LOW=Y[,"LOW"], t=1:TT), mapping=aes(x=t)) +
   geom_point(aes(y=LOW, color=Z.3state), size=0.5)  +
   scale_color_manual(values=c("darkgreen", "red", "blue")) +
   ylab(bquote(italic(Y)[italic("t,")*plain("1")])) +
-  xlab(bquote(italic(t))) +
+  xlab(expression(paste("Time bin index ", italic(t), " (", Delta, t, " = 50 s",")"))) +
   labs(color="ObsID 01885") +
   theme(legend.position = c(0.9, 0.75), legend.key = element_blank(), legend.text = element_text(size=12),
         legend.box.background = element_rect(colour = "black"), 

@@ -148,7 +148,7 @@ gg.statepreds <- ggplot(data=data.frame(LOW=X1.MLE, t=1:TT), mapping=aes(x=t)) +
   geom_point(aes(y=LOW), size=0.5)  +
   scale_color_manual(values=c("black")) +
   ylab(bquote(hat(italic(X))[italic("t,")*plain("1")])) +
-  xlab(bquote(italic(t))) +
+  xlab(expression(paste("Time bin index ", italic(t), " (", Delta, t, " = 50 s",")"))) +
   annotate("label", label="ObsID 01885", x=1850, y=1.9, size=11/.pt, family="Times New Roman") +
   theme(legend.position = c(0.9, 0.75), legend.key = element_blank(), legend.text = element_text(size=12),
         legend.box.background = element_rect(colour = "black"), 
@@ -165,7 +165,7 @@ gg.postprobs <- ggplot(data=data.frame(LOW=X1.MLE, t=1:TT), mapping=aes(x=t)) +
   geom_point(aes(y=LOW, color=Z.EM), size=0.5)  +
   scale_color_gradient(low="red", high="blue") +
   ylab(bquote(hat(italic(X))[italic("t,")*plain("1")])) +
-  xlab(bquote(italic(t))) +
+  xlab(expression(paste("Time bin index ", italic(t), " (", Delta, t, " = 50 s",")"))) +
   labs(color="ObsID 01885") +
   theme(legend.position = c(0.1, 0.65), legend.key = element_blank(), legend.text = element_text(size=12),
         legend.box.background = element_rect(colour = "black"), 
@@ -182,7 +182,7 @@ gg.postprobsY <- ggplot(data=data.frame(LOW=Y[,"LOW"], t=1:TT), mapping=aes(x=t)
   geom_point(aes(y=LOW, color=Z.EM), size=0.5)  +
   scale_color_gradient(low="red", high="blue") +
   ylab(bquote(italic(Y)[italic("t,")*plain("1")])) +
-  xlab(bquote(italic(t))) +
+  xlab(expression(paste("Time bin index ", italic(t), " (", Delta, t, " = 50 s",")"))) +
   labs(color="ObsID 01885") +
   theme(legend.position = c(0.1, 0.65), legend.key = element_blank(), legend.text = element_text(size=12),
         legend.box.background = element_rect(colour = "black"), 
