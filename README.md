@@ -36,17 +36,23 @@ These ObsIDs correspond to the two EV Lac datasets analyzed in the paper. Each O
 4. Summaries/plots: flare fraction, inferred flare intervals and diagnostic plots
 
 ### Example figures for ObsID 01885:
-1. Light curves:
+
+Light curves:
 <center>
   <img width="525" height="225" alt="EVLac_85_Yboth" src="https://github.com/user-attachments/assets/89895c3b-dc9e-4040-9f5b-716cded6ccbc"/>
 </center>
 
-2. Posterior flaring probabilities for decoded state sequence:
+Posterior flaring probabilities for decoded state sequence:
 <center>
   <img width="525" height="225" alt="EVLac_85_M2_postprobs" src="https://github.com/user-attachments/assets/8d898458-9447-44d1-8fb6-eb4cd6fdfe83" />
 </center>
 
-3. Posterior flaring probabilities imposed on soft-band light curve: 
+Posterior flaring probabilities imposed on soft-band light curve: 
 <center>
   <img width="525" height="225" alt="EVLac_85_M2_postprobsY" src="https://github.com/user-attachments/assets/be790e48-998e-4ace-bde3-ecb2ad624507" />
+</center>
+
+Heatmap of decoded states for an alternative bivariate AR(1) process state process (Model 3 in the paper): 
+<center>
+  <img width="525" height="225" alt="EVLac_85_M3_predsbihist" src="https://github.com/user-attachments/assets/cdee3dcd-6ddb-45a9-9118-33be8391298c" />
 </center>
