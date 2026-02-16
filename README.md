@@ -33,4 +33,20 @@ These ObsIDs correspond to the two EV Lac datasets analyzed in the paper. Each O
 1. Load and prepare light curves $\boldsymbol{Y}_t$ (soft/hard bands, time binning, etc.)
 2. Stage 1 fit: fit the continuous-space HMM and obtain filtered/smoothed state estimates $\hat{X}_t$
 3. Stage 2 fit: fit a finite mixture model to the $\hat{X}_t$ and classify time bins into quiescent versus flaring
-4. Summaries/plots: flare fraction, inferred flare intervals and diagnostic plots 
+4. Summaries/plots: flare fraction, inferred flare intervals and diagnostic plots
+
+### Example figures for ObsID 01885:
+1. Light curves:
+<center>
+  <img width="525" height="225" alt="EVLac_85_Yboth" src="https://github.com/user-attachments/assets/89895c3b-dc9e-4040-9f5b-716cded6ccbc"/>
+</center>
+
+2. Posterior flaring probabilities for decoded state sequence:
+<center>
+  <img width="525" height="225" alt="EVLac_85_M2_postprobs" src="https://github.com/user-attachments/assets/8d898458-9447-44d1-8fb6-eb4cd6fdfe83" />
+</center>
+
+3. Posterior flaring probabilities imposed on soft-band light curve: 
+<center>
+  <img width="525" height="225" alt="EVLac_85_M2_postprobsY" src="https://github.com/user-attachments/assets/be790e48-998e-4ace-bde3-ecb2ad624507" />
+</center>
